@@ -5,7 +5,7 @@ import (
 )
 
 func help(configURL *config) error {
-	fmt.Println("Welcome to the Pokedex!\nUsage:\n")
+	fmt.Println("Welcome to the Pokedex!\nUsage:")
 	commandList := getCommandList()
 	for key, command := range commandList {
 		newCommand := fmt.Sprintf("%s: %s", key, command.description)
